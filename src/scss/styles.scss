@@ -1,0 +1,37 @@
+// GLOBAL
+@import 'global/_reset.scss';
+@import 'global/_utilities.scss';
+@import 'global/_variables.scss';
+@import 'global/_fonts.scss';
+@import 'global/_typography.scss';
+
+// COMPONENTS
+// @import 'components/_card.scss';
+
+// LAYOUTS
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
+
+// PAGES
+@import 'pages/_homepage.scss';
+@import 'pages/project-preview.scss';
+
+body {
+  font-family: $font;
+  color: $papyrus;
+  overflow-x: hidden;
+  background-color: $dark;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100vw;
+  max-width: 1024px;
+  background-color: $dark;
+
+  // @include desktop-up {
+  //   // Hauteur des GoldenLines
+  //   height: 600vh;
+  // }
+}
