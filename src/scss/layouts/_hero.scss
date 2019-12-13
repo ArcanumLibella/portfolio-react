@@ -1,0 +1,19 @@
+.hero {
+  &__title {
+    color: $gold;
+    @include golden;
+  }
+
+  &__subtitle {
+    color: $papyrus;
+  }
+
+  &__student {
+    color: $gold;
+    @include golden;
+  }
+
+  &__description {
+    color: $papyrus;
+  }
+}

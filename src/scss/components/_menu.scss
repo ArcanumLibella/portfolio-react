@@ -1,0 +1,53 @@
+.menu {
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    color: $gold;
+  }
+
+  &__nav {
+
+  }
+
+  &__wrapper {
+
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-up {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__item {
+    
+    @include desktop-up {
+      margin: 0 30px;
+      text-align: center;
+      color: #efc864;
+    }
+
+    &:nth-child(1) {
+      font-size: rem(16px);
+      font-weight: 200;
+      letter-spacing: 8px;
+      opacity: .3;
+
+      @include desktop-up {
+        display: none;
+      }
+    }
+    
+  }
+}

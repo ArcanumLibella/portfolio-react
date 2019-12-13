@@ -1,3 +1,14 @@
-body {
-  background-color: $dark;
+.section {
+  height: 100vh;
+
+  &:nth-child(odd).project {
+    background-color: $papyrus;
+    color: $dark;
+
+    .project {
+      &__nb {
+        color: $gold;
+      }
+    }
+  }
 }

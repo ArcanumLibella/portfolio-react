@@ -6,15 +6,17 @@
 @import 'global/_typography.scss';
 
 // COMPONENTS
-// @import 'components/_card.scss';
+@import 'components/_menu.scss';
+@import 'components/_button.scss';
 
 // LAYOUTS
 @import 'layouts/_header.scss';
+@import 'layouts/_hero.scss';
 @import 'layouts/_footer.scss';
 
 // PAGES
 @import 'pages/_homepage.scss';
-@import 'pages/project-preview.scss';
+@import 'pages/project.scss';
 
 body {
   font-family: $font;
@@ -28,8 +30,7 @@ body {
   padding: 0 20px;
   width: 100vw;
   max-width: 1024px;
-  background-color: $dark;
-
+  
   // @include desktop-up {
   //   // Hauteur des GoldenLines
   //   height: 600vh;

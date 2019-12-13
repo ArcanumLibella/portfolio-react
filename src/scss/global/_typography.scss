@@ -22,9 +22,14 @@
 }
 
 .h3 {
-  font-size: rem(30px);
+  font-size: rem(20px);
   font-weight: 800;
   line-height: 125%;
+
+  .hero & {
+    font-size: rem(14px);
+    font-weight: 300;
+  }
 } 
 
 .h4 {
@@ -56,5 +61,20 @@
   font-size: rem(12px);
   font-weight: 300;
   line-height: 125%;
-  @include golden2;
+  @include golden;
+}
+
+.menu-button {
+  font-size: rem(14px);
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  font-family: NarzissProCy, Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.25rem;
+  line-height: 125%;
+  
 }
