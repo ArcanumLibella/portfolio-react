@@ -1,0 +1,46 @@
+.project-preview {
+  padding: 30px;
+
+  @include desktop-up {
+    display: flex;
+    padding: 0;
+  }
+
+  &__wrapper {
+    
+    @include desktop-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+      padding-left: 120px;
+    }
+  }
+
+  &__image {
+    
+  @include desktop-up {
+    width: 100%;
+    background-image: url('../../images/background_booking.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+  &__resume {
+    
+    @include desktop-up {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__date {
+    
+    @include desktop-up {
+      margin-bottom: 15px;
+    }
+  }
+
+
+}

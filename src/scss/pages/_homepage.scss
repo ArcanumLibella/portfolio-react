@@ -1,14 +1,18 @@
 .section {
   height: 100vh;
 
-  &:nth-child(odd).project {
+  &:nth-child(even).project-preview {
     background-color: $papyrus;
     color: $dark;
 
-    .project {
+    .project-preview {
       &__nb {
         color: $gold;
       }
     }
+  }
+
+  &--about {
+
   }
 }

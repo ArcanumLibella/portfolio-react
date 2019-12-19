@@ -2,7 +2,6 @@
   font-family: NarzissProSwirls, Impact, 'Arial Narrow Bold', sans-serif;
   font-size: rem(48px);
   font-weight: 800;
-  line-height: 125%;
 
     @include desktop-up {
       font-size: rem(96px);
@@ -13,68 +12,89 @@
   font-family: NarzissProCy, Impact, 'Arial Narrow Bold', sans-serif;
   font-size: rem(48px);
   font-weight: 800;
-  line-height: 125%;  
+  line-height: lineHeight(48px);  
 
   @include desktop-up {
-    font-size: rem(64px);
-    line-height: 125%;
+    font-size: rem(96px);
   }
 }
 
 .h3 {
-  font-size: rem(20px);
+  font-family: NarzissProCy, Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: rem(48px);
   font-weight: 800;
-  line-height: 125%;
+  line-height: lineHeight(48px);  
 
-  .hero & {
-    font-size: rem(14px);
-    font-weight: 300;
+  @include desktop-up {
+    font-size: rem(64px);
+    line-height: lineHeight(64px);  
   }
-} 
-
-.h4 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 125%;
 }
 
-.h5 {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 125%;
-  letter-spacing: 0.1rem;
+.h4 {
+  font-size: rem(20px);
+  font-weight: 800;
+  line-height: lineHeight(20px);  
+
+  .hero & {
+    font-size: rem(10px);
+    font-weight: 500;
+
+    @include desktop-up {
+      font-size: rem(14px);
+      font-weight: 500;
+    }
+  }
+}
+
+.subtitle {
+  font-size: rem(16px);
+  font-weight: 200;
+  line-height: lineHeight(16px);
+  @include golden;
 }
 
 .paragraph {
-  font-size: 1rem;
-  font-weight: 200;
-  line-height: 125%;
+  font-size: rem(16px);
+  font-weight: 300;
+  line-height: lineHeight(16px);  
 }
 
 .copyright {
   font-size: rem(10px);
   font-weight: 300;
-  line-height: 125%;
+  line-height: lineHeight(10px);  
 }
 
 .backtotop {
   font-size: rem(12px);
   font-weight: 300;
-  line-height: 125%;
+  line-height: lineHeight(12px);  
   @include golden;
 }
 
 .menu-button {
   font-size: rem(14px);
   font-weight: 500;
-  line-height: 125%;
+  line-height: lineHeight(14px);  
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .menu-link {
   font-family: NarzissProCy, Impact, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.25rem;
-  line-height: 125%;
-  
+  font-size: rem(32px);
+  line-height: lineHeight(32px);
+  font-weight: 800;
+
+  &:hover {
+    color: $darkGold;
+  }
+
+  @include desktop-up {
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: lineHeight(20px);  
+
+  }
 }

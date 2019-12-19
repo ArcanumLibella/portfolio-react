@@ -5,6 +5,12 @@
   @return #{$remSize}rem;
 }
 
+@function lineHeight($fs-px) {
+  $fontSize: $fs-px * 1.5;
+  
+  @return #{$fontSize};
+}
+
 // CLASS TO HIDE
 // .hidden-lg-down {
 //   @media screen and (max-width: $desktop-down) {

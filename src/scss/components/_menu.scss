@@ -1,7 +1,7 @@
 .menu {
 
   &__button {
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 0;
     display: flex;
@@ -9,29 +9,74 @@
     align-items: center;
     width: 62px;
     height: 62px;
+    background-color: transparent;
+    border: 0;
     color: $gold;
-  }
+    z-index: 10;
 
-  &__nav {
-
+    @include desktop-up {
+      display: none;
+    }
   }
 
   &__wrapper {
+    position: relative;
+    right: -100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    text-align: right;
+    background-color: #222222;
+    transition: right 0.3s ease-in-out;
 
+    &[open] {
+      right: -30vw;
+    }
+
+    @include tablet-up {
+      right: -100vw;
+      width: 50vw;
+
+      &[open] {
+        right: -50vw;
+      }
+    }
+
+    @include desktop-up {
+      background-color: transparent;
+      height: auto;
+      position: static;
+      display: block;
+      width: auto;
+      height: auto;
+      text-align: right;
+    }
   }
 
   &__items {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
 
     @include desktop-up {
       flex-direction: row;
       justify-content: flex-end;
+      padding: 0px;
+
     }
   }
 
   &__item {
+    margin: 10px 0;
     
+    @include tablet-up {
+      margin: 20px 0;
+    }
+
     @include desktop-up {
       margin: 0 30px;
       text-align: center;
@@ -39,7 +84,7 @@
     }
 
     &:nth-child(1) {
-      font-size: rem(16px);
+      font-size: rem(12px);
       font-weight: 200;
       letter-spacing: 8px;
       opacity: .3;

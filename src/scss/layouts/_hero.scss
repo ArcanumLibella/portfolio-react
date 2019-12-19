@@ -1,19 +1,46 @@
 .hero {
+  background-image: url(../../images/bg_hero-min.png);
+  background-size: cover;
+  background-position: center;
+
+  @include desktop-up {
+    background-image: url(../../images/bg_hero.jpg);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
   &__title {
     color: $gold;
     @include golden;
   }
 
   &__subtitle {
+    margin-top: -5px;
+    letter-spacing: 4px;
     color: $papyrus;
   }
 
   &__student {
+    margin-top: 120px;
     color: $gold;
     @include golden;
   }
 
   &__description {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: rem(14px);
     color: $papyrus;
   }
 }

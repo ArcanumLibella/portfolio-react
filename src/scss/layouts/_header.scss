@@ -1,6 +1,10 @@
 .header {
   position: fixed;
   top: 0;
-  margin: 0 auto;
   width: 100%;
+  
+  @include desktop-up {
+    margin-top: 20px;
+    padding-right: 50px;
+  }
 }
